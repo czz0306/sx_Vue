@@ -1,0 +1,676 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "id": "1",
+      "level": 1,
+      "name": "民政事务受理",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "申请和登记",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "城市居民低保",
+              "subType": "CITY_RESIDENT_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "农村居民低保",
+              "subType": "COUNTRY_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "城市低收入家庭",
+              "subType": "CITY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "4",
+              "level": 3,
+              "name": "农村低收入家庭",
+              "subType": "COUNTRY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "城市价补联动",
+              "subType": "CITY_PRICE_SUPPLEMETN_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "6",
+              "level": 3,
+              "name": "农村价补联动",
+              "subType": "COUNTRY_PRICE_SUPPLEMENT_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "农村五保供养",
+              "type": "entryActivity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "临时救助",
+              "type": "entryActivity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "优抚待遇",
+              "type": "entryActivity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "婚姻登记预约",
+              "type": "entryActivity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "公益创投",
+              "type": "entryActivity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "未成年人保护",
+              "type": "entryActivity"
+            },
+            {
+              "id": "13",
+              "level": 3,
+              "name": "孤残儿童",
+              "type": "entryActivity"
+            },
+            {
+              "id": "14",
+              "level": 3,
+              "name": "自然灾害",
+              "type": "entryActivity"
+            },
+            {
+              "id": "15",
+              "level": 3,
+              "name": "寻亲登记",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_APPLY"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "复审与变更",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "城市居民低保",
+              "subType": "CITY_RESIDENT_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "农村居民低保",
+              "subType": "COUNTRY_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "城市低收入家庭",
+              "subType": "CITY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "4",
+              "level": 3,
+              "name": "农村低收入家庭",
+              "subType": "COUNTRY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "城市价补联动",
+              "subType": "CITY_PRICE_SUPPLEMETN_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "6",
+              "level": 3,
+              "name": "农村价补联动",
+              "subType": "COUNTRY_PRICE_SUPPLEMENT_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "农村五保供养",
+              "type": "entryActivity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "临时救助",
+              "type": "entryActivity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "优抚待遇",
+              "type": "entryActivity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "公益创投",
+              "type": "entryActivity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "未成年人保护",
+              "type": "entryActivity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "孤残儿童",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_MODIFY"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区审核",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "城市居民低保",
+              "subType": "CITY_RESIDENT_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "农村居民低保",
+              "subType": "COUNTRY_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "城市低收入家庭",
+              "subType": "CITY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "4",
+              "level": 3,
+              "name": "农村低收入家庭",
+              "subType": "COUNTRY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "城市价补联动",
+              "subType": "CITY_PRICE_SUPPLEMETN_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "6",
+              "level": 3,
+              "name": "农村价补联动",
+              "subType": "COUNTRY_PRICE_SUPPLEMENT_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "农村五保供养",
+              "type": "entryActivity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "临时救助",
+              "type": "entryActivity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "优抚待遇",
+              "type": "entryActivity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "公益创投",
+              "type": "entryActivity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "未成年人保护",
+              "type": "entryActivity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "孤残儿童",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_COMMUNITY_AUDIT"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "街道审核",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "城市居民低保",
+              "subType": "CITY_RESIDENT_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "农村居民低保",
+              "subType": "COUNTRY_ALLOWANCE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "城市低收入家庭",
+              "subType": "CITY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "4",
+              "level": 3,
+              "name": "农村低收入家庭",
+              "subType": "COUNTRY_LOW_INCOME_FAMILY",
+              "type": "entryActivity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "城市价补联动",
+              "subType": "CITY_PRICE_SUPPLEMETN_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "6",
+              "level": 3,
+              "name": "农村价补联动",
+              "subType": "COUNTRY_PRICE_SUPPLEMENT_LINKAGE",
+              "type": "entryActivity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "农村五保供养",
+              "type": "entryActivity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "临时救助",
+              "type": "entryActivity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "优抚待遇",
+              "type": "entryActivity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "公益创投",
+              "type": "entryActivity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "未成年人保护",
+              "type": "entryActivity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "孤残儿童",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_STREET_AUDIT"
+        }
+      ],
+      "type": "ENTRY_CIVIL"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "公安事务受理",
+      "type": "ENTRY_POLICE"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "计生事务受理",
+      "type": "ENTRY_BIRTH_CONTROL"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "房产事务受理",
+      "type": "ENTRY_HOUSE_PROPERTY"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "人社事务受理",
+      "type": "ENTRY_HUMAN"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "教育事务受理",
+      "type": "ENTRY_EDU"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "医养服务",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区养老服务",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "社区生日会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "社区五保公益",
+              "type": "entryActivity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "日间照料中心",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_COMMUNITY_CARE"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区医疗服务",
+          "submenus": [
+            {
+              "id": "4",
+              "level": 3,
+              "name": "社区医院",
+              "type": "entryActivity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "社区急救箱",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_COMMUNITY_MEDICAL"
+        }
+      ],
+      "type": "ENTRY_MEDICAL_CARE"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "文娱生活",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区活动设施",
+          "submenus": [
+            {
+              "id": "6",
+              "level": 3,
+              "name": "安全教育室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "科普馆",
+              "type": "entryActivity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "书画室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "电子阅览室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "乒乓球室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "台球室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "道德讲堂",
+              "type": "entryActivity"
+            },
+            {
+              "id": "13",
+              "level": 3,
+              "name": "社区图书馆",
+              "type": "entryActivity"
+            },
+            {
+              "id": "14",
+              "level": 3,
+              "name": "党员活动室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "15",
+              "level": 3,
+              "name": "志愿者活动室",
+              "type": "entryActivity"
+            },
+            {
+              "id": "16",
+              "level": 3,
+              "name": "文化中心",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_COMMUNITY_ACT_FACILITY"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区文化活动",
+          "submenus": [
+            {
+              "id": "17",
+              "level": 3,
+              "name": "老年歌舞团",
+              "type": "entryActivity"
+            },
+            {
+              "id": "18",
+              "level": 3,
+              "name": "老年影视团",
+              "type": "entryActivity"
+            },
+            {
+              "id": "19",
+              "level": 3,
+              "name": "老年戏曲团",
+              "type": "entryActivity"
+            },
+            {
+              "id": "20",
+              "level": 3,
+              "name": "老年书画团",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_COMMUNITY_ACT_CULTURE"
+        }
+      ],
+      "type": "ENTRY_ENTERTAIN"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "民主建设",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "组织生活",
+          "submenus": [
+            {
+              "id": "21",
+              "level": 3,
+              "name": "支部活动",
+              "type": "entryActivity"
+            },
+            {
+              "id": "22",
+              "level": 3,
+              "name": "支部委员会活动",
+              "type": "entryActivity"
+            },
+            {
+              "id": "23",
+              "level": 3,
+              "name": "党小组活动",
+              "type": "entryActivity"
+            },
+            {
+              "id": "24",
+              "level": 3,
+              "name": "支部党课",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_ORG_LIFE"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "居民自治",
+          "submenus": [
+            {
+              "id": "25",
+              "level": 3,
+              "name": "居委会工作例会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "26",
+              "level": 3,
+              "name": "“两委”联席会议",
+              "type": "entryActivity"
+            },
+            {
+              "id": "27",
+              "level": 3,
+              "name": "楼门栋长会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "28",
+              "level": 3,
+              "name": "居务监督会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "29",
+              "level": 3,
+              "name": "物业管理联席会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "30",
+              "level": 3,
+              "name": "居民代表会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "31",
+              "level": 3,
+              "name": "民主听证会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "32",
+              "level": 3,
+              "name": "协商议事会",
+              "type": "entryActivity"
+            },
+            {
+              "id": "33",
+              "level": 3,
+              "name": "社会组织会",
+              "type": "entryActivity"
+            }
+          ],
+          "type": "ENTRY_SELF_GOV"
+        }
+      ],
+      "type": "ENTRY_DEMOCACY"
+    }
+  ],
+  "msg": "SUCCESS"
+}

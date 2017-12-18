@@ -1,0 +1,402 @@
+1.  检索驻社区单位
+    a.  请求url
+        /admin/communityUnit/search
+    b.  method
+        GET
+    c.  参数
+        name 名称
+        nameAsPinyin 名称拼音
+        industry    行业
+        head    负责人
+        phone   手机号
+        legalPerson 法人代表
+        operationType   经营方式
+        operationScope  经营范围
+        numOfEmployee   职工数量
+        existenceStatus 存在状态
+        unionOrg        工会组织
+        womenFederation 妇联组织
+        communistYouthLeague    共青团组织
+        partyOrg    党组织
+        pageNo      :   页号
+        pageSize    :   每页大小
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS",
+            "data"  :   {
+                "recordsTotal"  :   2,  //总记录数
+                "data" :   [{
+                    "id"    : 1,        //ID
+                    "name"  :   "",     //名称
+                    "nameAsPinyin"  :   "",//名称拼音
+                    "head"  :   "",     //负责人
+                    "phone" :   "",     //联系电话
+                    "postCode"  :   "", //邮政编码
+                    "isBusinessReg" :   "", 是否工商注册
+                    "businessRegNumber" :   "", //工商登记号
+                    "businessRegTime"   :   "", //工商注册时间
+                    "businessRegCapital":   "", //注册资金
+                    "businessRegPeriod" :   "", //经营期限
+                    "nationalTaxNumber" :   "", //国税登记号
+                    "localTaxNumber"    :   "", //地税登记号
+                    "operationType"     :   {
+                        "name" : "",
+                        "value": "",
+                    }, //经营方式
+                    "operationScope"    :   "", //经营范围
+                    "adminOrg"          :   "", //管理机关
+                    "numOfEmployee"     :   "", //员工数量
+                    "numOfExternalPopulation"  :   "", //外来人口数量
+                    "existenceStatus"   :{
+                        "name":"",
+                        "value":""
+                    },//存在状态
+                    "houseType" :   {
+                        "name" : "",
+                        "value": ""
+                    },  //房屋类型
+                    "orgCode"           :   "", //机构代码
+                    "hasInfra"          :   "", //是否开放服务设施
+                    "remark"            :   "", //备注
+                    "longitude"         :   "", //经度
+                    "latitude"          :   "", //纬度
+                    "unionOrg"          :   "", //是否工会组织
+                    "unionContact"      :   "", //工会联系人
+                    "unionPhone"        :   "", //工会电话
+                    "womenFederation"   :   "", //是否妇联组织
+                    "womenFederationContact":"",//妇联联系人
+                    "womenFederationPhone": "", //妇联联系电话
+                    "communistYouthLeague": "", //是否共青团组织
+                    "communistYouthLeagueNum":"",//团员数量
+                    "communistYouthLeagueContact":"",//团组织联系人
+                    "communistYouthLeaguePhone""", //团组织联系电话
+                    "partyOrg"  :   "",            //是否党组织
+                    "partyMembership":{
+                        "name":"",
+                        "value":""
+                    }, //党组织隶属
+                    "partyMemberNumber" :   "", //党员人数
+                    "partyContact"  :   "", //党组织联系人
+                    "partyPhone"    :   "", //党组织联系电话
+                    "legalPerson"   ：  "", //法人
+                    "unitType":{
+                        "name" : "",
+                        "value":""
+                    }, //组织类型
+                    "industry"  :   {
+                        "name" : "",
+                        "value": ""
+                    }, //行业
+                    "addressType"   : {
+                        "name" : "",
+                        "value": ""
+                    }, //地址类型
+                    "addressId":"", //地址id
+                    "addressDetail":"", //地址详情
+                    "registerUid" : "", //登记人id
+                    "registerName":"", //登记人姓名
+                    "registerTime":"", //登记时间
+                    "registerCommunityId":"", //登记社区id
+                    "registerCommunityName":"" //登记社区名称
+                }]
+            }
+        }
+    e.  demo数据
+
+2.  创建驻社区单位
+    a.  请求url
+        /admin/communityUnit
+    b.  method
+        POST
+    c.  参数
+        name 名称
+        nameAsPinyin    名称拼音
+        head    负责人
+        phone   手机号
+        postCode    邮政编码
+
+        isBusinessReg 是否工商注册
+        businessRegNumber   工商登记号
+        businessRegTime     工商注册时间
+        businessRegCapital  注册资金
+        businessRegPeriod   经营期限
+        nationalTaxNumber   国税
+        localTaxNumber      地税
+
+        operationType   经营类型
+        operationScope  经营范围
+        adminOrg        管理机关
+        numOfEmployee   职工数量
+        numOfExternalPopulation 外来人口数量
+        existenceStatus 存在状态
+        houseType   房屋类型
+        orgCode     机构代码
+
+        hasInfra    是否开放基础服务
+        remark      备注
+        longitude   经度
+        latitude    维度
+
+
+        unionOrg    是否工会组织
+        unionContact    工会联系人
+        unionPhone      工会联系电话
+
+        womenFederation 是否妇联组织
+        womenFederationContact  妇联组织联系人
+        womenFederationPhone    妇联组织联系电话
+
+        communistYouthLeague    是否共青团员
+        communistYouthLeagueNum 团员数量
+        communistYouthLeagueContact 团员联系人
+        communistYouthLeaguePhone   团员联系电话
+
+
+        partyOrg    是否党组织
+        partyMembership 党组织隶属
+        partyMemberNumber   党员数量
+        partyContact    党组织联系人
+        partyPhone      党组织联系电话
+
+        legalPerson      法人
+        industry        行业
+
+        addressType     地址类型
+        addressId       地址id
+        addressDetail   地址详情
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS",
+            "data"  :   {
+                "id" : 1    //id
+            }
+        }
+    e.  demo数据
+3.  更新驻社区单位
+    a.  请求url
+        /admin/communityUnit/{id}/update
+    b.  method
+        POST
+    c.  参数
+        name 名称
+        nameAsPinyin    名称拼音
+        head    负责人
+        phone   手机号
+        postCode    邮政编码
+
+        isBusinessReg 是否工商注册
+        businessRegNumber   工商登记号
+        businessRegTime     工商注册时间
+        businessRegCapital  注册资金
+        businessRegPeriod   经营期限
+        nationalTaxNumber   国税
+        localTaxNumber      地税
+
+        operationType   经营类型
+        operationScope  经营范围
+        adminOrg        管理机关
+        numOfEmployee   职工数量
+        numOfExternalPopulation 外来人口数量
+        existenceStatus 存在状态
+        houseType   房屋类型
+        orgCode     机构代码
+
+        hasInfra    是否开放基础服务
+        remark      备注
+        longitude   经度
+        latitude    维度
+
+
+        unionOrg    是否工会组织
+        unionContact    工会联系人
+        unionPhone      工会联系电话
+
+        womenFederation 是否妇联组织
+        womenFederationContact  妇联组织联系人
+        womenFederationPhone    妇联组织联系电话
+
+        communistYouthLeague    是否共青团员
+        communistYouthLeagueNum 团员数量
+        communistYouthLeagueContact 团员联系人
+        communistYouthLeaguePhone   团员联系电话
+
+
+        partyOrg    是否党组织
+        partyMembership 党组织隶属
+        partyMemberNumber   党员数量
+        partyContact    党组织联系人
+        partyPhone      党组织联系电话
+
+        legalPerson      法人
+        industry        行业
+
+        addressType     地址类型
+        addressId       地址id
+        addressDetail   地址详情
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS"
+        }
+    e.  demo数据
+4.  禁用驻社区单位
+    a.  请求url
+        /admin/communityUnit/{id}/disable
+    b.  method
+        POST
+    c.  参数
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS"
+        }
+    e.  demo数据
+
+5.  启用驻社区单位
+    a.  请求url
+        /admin/communityUnit/{id}/disable
+    b.  method
+        POST
+    c.  参数
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS"
+        }
+    e.  demo数据
+6.  获取驻社区单位成员
+    a.  请求url
+        /admin/communityUnit/{id}/member
+    b.  method
+        GET
+    c.  参数
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS",
+            "data"  : [{
+               "memberRole" :   {
+                    "name":"",
+                    "value":""
+               }, //成员角色
+                "name"  :   "", //姓名
+                "certNumber"   :    "", //证件号
+                "nationType":{
+                    "name" : "",
+                    "value":""
+                }, //民族
+                "phone" : "", //手机号
+                "degreeOfEducation":{
+                    "name" : "",
+                    "value":""
+                }, //受教育程度
+                "politicalStatus"{
+                    "name" : "",
+                    "value": ""
+                }, //政治面貌
+                "maritalStatus":{
+                    "name" : "",
+                    "value":""
+                }, //婚姻情况
+                "position" : "", //职位
+                "address"  : "", //地址
+                "specialty": "" //特长
+            }
+            ]
+        }
+    e.  demo数据
+
+7.  创建驻社区单位成员
+    a.  请求url
+        /admin/communityUnit/{id}/member
+    b.  method
+        POST
+    c.  参数
+        memberRole  角色
+        name    姓名
+        certNumber  证件号
+        nationType  民族
+        phone   手机号
+        degreeOfEducation   受教育程度
+        politicalStatus     政治面貌
+        maritalStatus       婚姻情况
+        position            职务
+        addressId           地址ID
+        address             地址
+        specialty           特长
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS",
+            "data"  : {
+                "id": ""
+            }
+        }
+    e.  demo数据
+8.  更新驻社区单位成员
+    a.  请求url
+        /admin/communityUnit/{unitId}/member/{id}/update
+    b.  method
+        POST
+    c.  参数
+        memberRole  角色
+        name    姓名
+        certNumber  证件号
+        nationType  民族
+        phone   手机号
+        degreeOfEducation   受教育程度
+        politicalStatus     政治面貌
+        maritalStatus       婚姻情况
+        position            职务
+        addressId           地址ID
+        address             地址
+        specialty           特长
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS"
+        }
+    e.  demo数据
+
+9.  获取驻社区单位成员
+    a.  请求url
+        /admin/communityUnit/{unitId}/member/{id}
+    b.  method
+        GET
+    c.  参数
+    d.  返回值格式
+         {
+            "code"  :   1,
+            "msg"   :   "SUCCESS",
+            "data"  : {
+               "memberRole" :   {
+                    "name":"",
+                    "value":""
+               }, //成员角色
+                "name"  :   "", //姓名
+                "certNumber"   :    "", //证件号
+                "nationType":{
+                    "name" : "",
+                    "value":""
+                }, //民族
+                "phone" : "", //手机号
+                "degreeOfEducation":{
+                    "name" : "",
+                    "value":""
+                }, //受教育程度
+                "politicalStatus"{
+                    "name" : "",
+                    "value": ""
+                }, //政治面貌
+                "maritalStatus":{
+                    "name" : "",
+                    "value":""
+                }, //婚姻情况
+                "position" : "", //职位
+                "address"  : "", //地址
+                "specialty": "" //特长
+            }
+        }
+    e.  demo数据

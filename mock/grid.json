@@ -1,0 +1,297 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "id": "1",
+      "leaf": false,
+      "level": 1,
+      "name": "社区基本信息管理",
+      "submenus": [
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "居民基本信息",
+          "type": "GRID_COMMUNITY_PERSON"
+        },
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "驻社区单位基本信息",
+          "type": "GRID_COMMUNITY_RESIDENT_UNIT"
+        },
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "社区社会组织管理",
+          "type": "GRID_COMMUNITY_ORG_UNIT"
+        },
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "网格楼门栋长登记",
+          "type": "GRID_GATE_MANAGER_REGISTER"
+        },
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "在职党员报到",
+          "type": "GRID_PARTY_REPORT"
+        }
+      ],
+      "type": "GRID_COMMUNITY_INFO"
+    },
+    {
+      "id": "1",
+      "leaf": false,
+      "level": 1,
+      "name": "网格员工作",
+      "submenus": [
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "个人信息管理",
+          "type": "GRID_SELF_INFO"
+        },
+        {
+          "id": "1",
+          "leaf": true,
+          "level": 2,
+          "name": "岗位工作日志",
+          "type": "GRID_WORK_LOG"
+        },
+        {
+          "id": "1",
+          "leaf": false,
+          "level": 2,
+          "name": "社情民情",
+          "submenus": [
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "接访上报",
+              "type": "GRID_RECEPTION_REPORT"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "走访上报",
+              "type": "GRID_VISIT_REPORT"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "其他事件上报",
+              "type": "GRID_OTHER_EVENT_REPORT"
+            }
+          ],
+          "type": "GRID_PERSON_FEEL"
+        }
+      ],
+      "type": "GRID_GRID_JOB"
+    },
+    {
+      "id": "1",
+      "leaf": false,
+      "level": 1,
+      "name": "网格长工作",
+      "submenus": [
+        {
+          "id": "1",
+          "leaf": false,
+          "level": 2,
+          "name": "网格员管理",
+          "submenus": [
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "社工基本信息管理",
+              "type": "GRID_SOCIAL_WORKER_INFO"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "工作日志审查",
+              "type": "GRID_WORK_LOG_AUDIT"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "社工绩效考核",
+              "type": "GRID_SOCIAL_WORKER_PERFORMANCE_AUDIT"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "社工工资核算",
+              "type": "GRID_SOCIAL_WORKER_WAGES_AUDIT"
+            }
+          ],
+          "type": "GRID_GRID_MEMBER_MANAGER"
+        },
+        {
+          "id": "1",
+          "leaf": false,
+          "level": 2,
+          "name": "社区民情处理",
+          "submenus": [
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "接访处理",
+              "type": "GRID_RECEPTION_MANAGER"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "走访处理",
+              "type": "GRID_VISIT_MANAGER"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "其他事件处理",
+              "type": "GRID_OTHER_EVENT_MANAGER"
+            }
+          ],
+          "type": "GRID_PERSON_FEEL_MANAGE"
+        }
+      ],
+      "type": "GRID_GRID_LEADER_JOB"
+    },
+    {
+      "id": "1",
+      "leaf": false,
+      "level": 1,
+      "name": "社区会议记录",
+      "submenus": [
+        {
+          "id": "1",
+          "leaf": false,
+          "level": 2,
+          "name": "党组织会议",
+          "submenus": [
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "支部会议",
+              "type": "GRID_BRANCH_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "支部委员会",
+              "type": "GRID_BRANCH_MEMBER_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "党小组会",
+              "type": "GRID_PARTY_GROUP_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "支部党课",
+              "type": "GRID_PARTY_GROUP_COURSE"
+            }
+          ],
+          "type": "GRID_PARTY_MEETING"
+        },
+        {
+          "id": "1",
+          "leaf": false,
+          "level": 2,
+          "name": "居民自治会议",
+          "submenus": [
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "居委会工作例会",
+              "type": "GRID_COMMITTEE_WORK_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "“两委”联席会议",
+              "type": "GRID_JOINT_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "楼门栋长会",
+              "type": "GRID_GATE_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "居务监督会",
+              "type": "GRID_HOME_CONTROL_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "物业管理联席会",
+              "type": "GRID_ESTATE_LINAGE_MEETING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "居民代表会",
+              "type": "GRID_DWELLER_CONGRESS"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "民主听证会",
+              "type": "GRID_DWELLER_HEARING"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "协商议事会",
+              "type": "GRID_CONSULT_SENADO"
+            },
+            {
+              "id": "1",
+              "leaf": true,
+              "level": 3,
+              "name": "社会组织会",
+              "type": "GRID_SOCIAL_ORG_MEETING"
+            }
+          ],
+          "type": "GRID_SELF_GOV_MEETING"
+        }
+      ],
+      "type": "GRID_COMMUNITY_MEETING"
+    }
+  ],
+  "msg": "SUCCESS"
+}

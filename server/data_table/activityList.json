@@ -1,0 +1,98 @@
+{
+    "name": "活动列表",
+    "list": [
+        {
+            "categoryId": "活动类别id",
+            "name": "电影节",
+            "imagePath": [
+                "blob:http://localhost:8888/6508ba43-b653-42f4-9b3b-3acf4267dbdc",
+                "blob:http://localhost:8888/0f45a758-ff88-4804-936f-18faf20f0542",
+                "blob:http://localhost:8888/f293381d-d77d-4ca4-af6c-1110ca5db05a"
+            ],
+            "startDate": "2017-12-05T16:00:00.000Z",
+            "endDate": "2017-12-14T16:00:00.000Z",
+            "locationName": "辽宁省锦州市北宁市111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "啊水电费勾魂吧",
+            "imagePath": [
+                "blob:http://localhost:8888/dd52eebe-8889-4271-b75c-c5b7aaeb2e4c",
+                "blob:http://localhost:8888/99a95144-400e-4349-b207-f2b4691bdc06"
+            ],
+            "startDate": "2017-11-27T16:00:00.000Z",
+            "endDate": "2017-12-05T16:00:00.000Z",
+            "locationName": "北京市北京市西城区111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "和预想的一样，我看着他离开",
+            "imagePath": [
+                "blob:http://localhost:8888/18549ed9-1fbd-43f9-8e1e-f83d0b811a24",
+                "blob:http://localhost:8888/62073026-9491-4bf4-8c8f-d63c88da9f07",
+                "blob:http://localhost:8888/b2236968-70c8-4c9b-84c4-45650a0bebe5",
+                "blob:http://localhost:8888/15807631-4dec-40d0-bd4f-61812930ae47",
+                "blob:http://localhost:8888/8a8f4a3d-eb35-4ee8-a229-9277f71bd448"
+            ],
+            "startDate": "2017-12-04T16:00:00.000Z",
+            "endDate": "2017-12-06T16:00:00.000Z",
+            "locationName": "北京市北京市东城区111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "雪路重播",
+            "imagePath": [
+                "blob:http://localhost:8888/d393333c-6ae0-4c90-bb21-8a997803aab3",
+                "blob:http://localhost:8888/3f376c66-a991-4032-9fb6-59cebf5b085a"
+            ],
+            "startDate": "2017-12-27T16:00:00.000Z",
+            "endDate": "2017-12-29T16:00:00.000Z",
+            "locationName": "吉林省松原市前郭尔罗斯蒙古族自治县111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "让我为自己而活",
+            "imagePath": [
+                "blob:http://localhost:8888/738a693d-664b-438e-b2d2-bc3563c33d45",
+                "blob:http://localhost:8888/e7d3634e-6b49-47c4-8258-6e9c44052022",
+                "blob:http://localhost:8888/2c5d13e9-87e6-4d36-a52d-9f71362a9cba"
+            ],
+            "startDate": "2017-12-05T16:00:00.000Z",
+            "endDate": "2017-12-06T16:00:00.000Z",
+            "locationName": "湖北省襄樊市枣阳市111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "xuelu",
+            "imagePath": [
+                "blob:http://localhost:8888/21ceb240-2093-476d-8446-93a44f8ab114",
+                "blob:http://localhost:8888/44826afb-576c-4cc3-95f7-03118646ef6d"
+            ],
+            "startDate": "2017-12-18T16:00:00.000Z",
+            "endDate": "2017-12-19T16:00:00.000Z",
+            "locationName": "吉林省松原市其他111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "xiangixn",
+            "imagePath": [
+                "blob:http://localhost:8888/21ceb240-2093-476d-8446-93a44f8ab114",
+                "blob:http://localhost:8888/44826afb-576c-4cc3-95f7-03118646ef6d",
+                "blob:http://localhost:8888/0184ec1a-7627-4d30-b208-1b78ffaf746e"
+            ],
+            "startDate": "2017-12-12T16:00:00.000Z",
+            "endDate": "2017-12-20T16:00:00.000Z",
+            "locationName": "北京市北京市崇文区111室"
+        },
+        {
+            "categoryId": "活动类别id",
+            "name": "xuelu2",
+            "imagePath": [
+                "blob:http://localhost:8888/4b4a4634-30ea-4d36-9902-8850a7c8e976"
+            ],
+            "startDate": "2017-12-05T16:00:00.000Z",
+            "endDate": "2017-12-06T16:00:00.000Z",
+            "locationName": "江西省赣州市宁都县111室"
+        }
+    ]
+}

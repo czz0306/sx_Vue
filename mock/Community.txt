@@ -1,0 +1,154 @@
+1.  检索社区负责人
+    a.  请求url
+        /admin/community/manger/search
+    b.  method
+        GET
+    c.  参数
+        query:查询字符串
+    d.  返回值格式
+        {
+            "code": 1,
+            "msg": "SUCCESS",
+            "data": [
+                {
+                    "uid": 1,                   //用户id
+                    "phone": "18629817281",     //用户手机号
+                    "name": "王强"               //用户姓名
+                },
+                {
+                    "uid": 2,
+                    "phone": "18629080981",
+                    "name": "王五"
+                }
+            ]
+        }
+    e.  demo数据
+        {
+            "code": 1,
+            "data": [
+                {
+                    "uid": 1,
+                    "phone": "18629817281",
+                    "name": "王强"
+                },
+                {
+                    "uid": 2,
+                    "phone": "18629080981",
+                    "name": "王五"
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+
+2.  检索社区负责单位
+    a.  请求url
+        /admin/community/unit/search
+    b.  method
+        GET
+    c.  参数
+        query:查询字符串
+    d.  返回值格式
+        {
+            "code": 1,
+            "msg": "SUCCESS",
+            "data": [
+                {
+                    "name": "社区居委会", // 单位名称
+                    "id": 2             // 单位ID
+                }
+            ],
+
+        }
+    e.  demo数据
+        {
+            "code": 1,
+            "data": [
+                {
+                    "name": "社区居委会",
+                    "id": 2
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+
+3.  获取顶级Location
+    a.  请求url
+        /admin/community/location/root
+    b.  method
+        GET
+    c.  参数
+        无
+    d.  返回值格式
+        {
+            "code": 1,
+            "data": [
+                {
+                    "name": "三鑫1区",
+                    "id": 1
+                },
+                {
+                    "name": "三鑫2区",
+                    "id": 2
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+    e.  demo数据
+
+4.  获取子Location
+    a.  请求url
+        /admin/community/location/children
+    b.  method
+        GET
+    c.  参数
+        parentId
+    d.  返回值格式
+        {
+            "code": 1,
+            "data": [
+                {
+                    "name": "1号楼",
+                    "id": 3
+                },
+                {
+                    "name": "2号楼",
+                    "id": 4
+                },
+                {
+                    "name": "3号楼",
+                    "id": 5
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+    e.  demo数据
+
+5.  检索社区居民
+    a.  请求url
+        /admin/community/resident/search
+    b.  method
+        GET
+    c.  参数
+        query
+    d.  返回值格式
+        {
+            "code": 1,
+            "data": [
+                {
+                    "uid": 1,
+                    "gender": "MALE",
+                    "phone": "18620910928",
+                    "name": "张强",
+                    "dateOfBirth": 515212949884
+                },
+                {
+                    "uid": 2,
+                    "gender": "MALE",
+                    "phone": "18620918219",
+                    "name": "李三",
+                    "dateOfBirth": 578367759740
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+    e.  demo数据

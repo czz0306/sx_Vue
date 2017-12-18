@@ -1,0 +1,1147 @@
+1. 获取菜单 #现菜单固定为两级
+    a. 请求url
+        /admin/menu/[public|grid|entry]
+    b. method
+        GET
+    c.  参数
+        见url
+    d. 返回数据格式
+        {
+            "code": 1,
+            "msg": "SUCCESS",
+            "data": [
+                {
+                    "name": "社区活动",  //一级菜单，菜单名称
+                    "submenus": [       //二级菜单
+                        {
+                            "id": 70,   //二级菜单id
+                            "name": "社区老年歌舞团",//二级菜单名称
+                            "type": "activity"      //二级菜单类型，用于控制使用哪个控制器
+                        },
+                        {
+                            "id": 71,
+                            "name": "社区老年影视团",
+                            "type": "activity"
+                        },
+                        {
+                            "id": 72,
+                            "name": "社区老年戏曲团",
+                            "type": "activity"
+                        },
+                        {
+                            "id": 73,
+                            "name": "社区老年书画团",
+                            "type": "activity"
+                        }
+                    ],
+                    "type": "ActivityCategoryGroup"
+                }
+            ]
+
+        }
+    e. demo数据
+        grid:
+        {
+            "code": 1,
+            "data": [
+                {
+                    "id": "1",
+                    "name": "社区基本信息管理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "居民基本信息",
+                            "type": "GRID_COMMUNITY_PERSON"
+                        },
+                        {
+                            "id": "1",
+                            "name": "驻社区单位基本信息",
+                            "type": "GRID_COMMUNITY_RESIDENT_UNIT"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区社会组织管理",
+                            "type": "GRID_COMMUNITY_ORG_UNIT"
+                        },
+                        {
+                            "id": "1",
+                            "name": "网格楼门栋长登记",
+                            "type": "GRID_GATE_MANAGER_REGISTER"
+                        },
+                        {
+                            "id": "1",
+                            "name": "在职党员报到",
+                            "type": "GRID_PARTY_REPORT"
+                        }
+                    ],
+                    "type": "GRID_COMMUNITY_INFO"
+                },
+                {
+                    "id": "1",
+                    "name": "网格员工作",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "个人信息管理",
+                            "type": "GRID_SELF_INFO"
+                        },
+                        {
+                            "id": "1",
+                            "name": "岗位工作日志",
+                            "type": "GRID_WORK_LOG"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社情民情",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "接访上报",
+                                    "type": "GRID_RECEPTION_REPORT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "走访上报",
+                                    "type": "GRID_VISIT_REPORT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "其他事件上报",
+                                    "type": "GRID_OTHER_EVENT_REPORT"
+                                }
+                            ],
+                            "type": "GRID_PERSON_FEEL"
+                        }
+                    ],
+                    "type": "GRID_GRID_JOB"
+                },
+                {
+                    "id": "1",
+                    "name": "网格长工作",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "网格员管理",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "社工基本信息管理",
+                                    "type": "GRID_SOCIAL_WORKER_INFO"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "工作日志审查",
+                                    "type": "GRID_WORK_LOG_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社工绩效考核",
+                                    "type": "GRID_SOCIAL_WORKER_PERFORMANCE_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社工工资核算",
+                                    "type": "GRID_SOCIAL_WORKER_WAGES_AUDIT"
+                                }
+                            ],
+                            "type": "GRID_GRID_MEMBER_MANAGER"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区民情处理",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "接访处理",
+                                    "type": "GRID_RECEPTION_MANAGER"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "走访处理",
+                                    "type": "GRID_VISIT_MANAGER"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "其他事件处理",
+                                    "type": "GRID_OTHER_EVENT_MANAGER"
+                                }
+                            ],
+                            "type": "GRID_PERSON_FEEL_MANAGE"
+                        }
+                    ],
+                    "type": "GRID_GRID_LEADER_JOB"
+                },
+                {
+                    "id": "1",
+                    "name": "社区会议记录",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "党组织会议",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "支部会议",
+                                    "type": "GRID_BRANCH_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部委员会",
+                                    "type": "GRID_BRANCH_MEMBER_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "党小组会",
+                                    "type": "GRID_PARTY_GROUP_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部党课",
+                                    "type": "GRID_PARTY_GROUP_COURSE"
+                                }
+                            ],
+                            "type": "GRID_PARTY_MEETING"
+                        },
+                        {
+                            "id": "1",
+                            "name": "居民自治会议",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "居委会工作例会",
+                                    "type": "GRID_COMMITTEE_WORK_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "“两委”联席会议",
+                                    "type": "GRID_JOINT_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "楼门栋长会",
+                                    "type": "GRID_GATE_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居务监督会",
+                                    "type": "GRID_HOME_CONTROL_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "物业管理联席会",
+                                    "type": "GRID_ESTATE_LINAGE_MEETING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居民代表会",
+                                    "type": "GRID_DWELLER_CONGRESS"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "民主听证会",
+                                    "type": "GRID_DWELLER_HEARING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "协商议事会",
+                                    "type": "GRID_CONSULT_SENADO"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社会组织会",
+                                    "type": "GRID_SOCIAL_ORG_MEETING"
+                                }
+                            ],
+                            "type": "GRID_SELF_GOV_MEETING"
+                        }
+                    ],
+                    "type": "GRID_COMMUNITY_MEETING"
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+
+
+        public:
+        {
+            "code": 1,
+            "data": [
+                {
+                    "id": "1",
+                    "name": "停车场管理",
+                    "type": "PUBLIC_PARKING"
+                },
+                {
+                    "id": "1",
+                    "name": "社区安防管理",
+                    "type": "PUBLIC_SECURITY"
+                },
+                {
+                    "id": "1",
+                    "name": "楼宇电梯管理",
+                    "type": "PUBLIC_LIF"
+                },
+                {
+                    "id": "1",
+                    "name": "民政政策信息管理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "城市居民低保",
+                            "type": "PUBLIC_CITY_DWELLER_ALLOWANCE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "农村居民低保",
+                            "type": "PUBLIC_COUNTRY_DWELLER_ALLOWANCE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "城市低收入家庭",
+                            "type": "PUBLIC_CITY_DWELLER_LOW_INCOME_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "农村低收入家庭",
+                            "type": "PUBLIC_COUNTRY_DWELLER_LOW_INCOME_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "城市价补联动",
+                            "type": "PUBLIC_CITY_PRICE_LINKAGE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "农村价补联动",
+                            "type": "PUBLIC_COUNTRY_PRICE_LINKAGE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "农村五保供养",
+                            "type": "PUBLIC_COUNTRY_FIVE_GUARANTESS_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "临时救助",
+                            "type": "PUBLIC_TEMP_RESCUE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "优抚待遇",
+                            "type": "PUBLIC_SPECIAL_CARE_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "婚姻登记预约",
+                            "type": "PUBLIC_MARRIAGE_BOOKING"
+                        },
+                        {
+                            "id": "1",
+                            "name": "公益创投",
+                            "type": "PUBLIC_VENTURE_CAPITAL_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "未成年人保护",
+                            "type": "PUBLIC_MINOR_PROTECT_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "孤残儿童",
+                            "type": "PUBLIC_DISABLE_CHILDREN_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "自然灾害",
+                            "type": "PUBLIC_NATURAL_DISASTER"
+                        },
+                        {
+                            "id": "1",
+                            "name": "寻亲登记",
+                            "type": "PUBLIC_TRACE_REGISTER"
+                        }
+                    ],
+                    "type": "PUBLIC_CIVIL_POLICY"
+                },
+                {
+                    "id": "1",
+                    "name": "医养服务信息管理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "社区养老服务",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "社区生日会",
+                                    "type": "PUBLIC_COMMUNITY_BIRTHDAY_PARTY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区五保公益",
+                                    "type": "PUBLIC_COMMUNITY_FIVE_GUARANTEES"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "日间照料中心",
+                                    "type": "PUBLIC_COMMUNITY_DAY_CARE_CENTER"
+                                }
+                            ],
+                            "type": "PUBLIC_COMMUNITY_CARE"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区医疗服务",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "社区医院",
+                                    "type": "PUBLIC_COMMUNITY_HOSPITAL"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区急救箱",
+                                    "type": "PUBLIC_COMMUNITY_FIRST_AID_CARE"
+                                }
+                            ],
+                            "type": "PUBLIC_COMMUNITY_MEDICAL"
+                        }
+                    ],
+                    "type": "PUBLIC_MEDICAL_CARE"
+                },
+                {
+                    "id": "1",
+                    "name": "文娱生活信息管理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "社区活动设施",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "安全教育室",
+                                    "type": "PUBLIC_COMMUNITY_SAFE_EDU_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "科普馆",
+                                    "type": "PUBLIC_COMMUNITY_MUSEUM_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "书画室",
+                                    "type": "PUBLIC_COMMUNITY_PAINT_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "电子阅览室",
+                                    "type": "PUBLIC_COMMUNITY_DIGITAL_READ_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "乒乓球室",
+                                    "type": "PUBLIC_COMMUNITY_PINGPANG_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "台球室",
+                                    "type": "PUBLIC_COMMUNITY_BILLIARD_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "道德讲堂",
+                                    "type": "PUBLIC_COMMUNITY_MORALITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区图书馆",
+                                    "type": "PUBLIC_COMMUNITY_LIBRARY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "党员活动室",
+                                    "type": "PUBLIC_COMMUNITY_PARTY_ACTIVITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "志愿者活动室",
+                                    "type": "PUBLIC_COMMUNITY_VOLUNTEER_ACTIVITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "文化中心",
+                                    "type": "PUBLIC_COMMUNITY_CULTURAL_CENTER"
+                                }
+                            ],
+                            "type": "PUBLIC_COMMUNITY_ACT_FACILITY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区文化活动",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "老年歌舞团",
+                                    "type": "PUBLIC_COMMUNITY_OLD_CHORUS"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年影视团",
+                                    "type": "PUBLIC_COMMUNITY_OLD_FILM_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年戏曲团",
+                                    "type": "PUBLIC_COMMUNITY_OLD_OPERA_TROUPE"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年书画团",
+                                    "type": "PUBLIC_COMMUNITY_OLD_PAINT_GROUP"
+                                }
+                            ],
+                            "type": "PUBLIC_COMMUNITY_ACT_CULTURE"
+                        }
+                    ],
+                    "type": "PUBLIC_ENTERTAIN"
+                },
+                {
+                    "id": "1",
+                    "name": "民主建设信息管理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "组织生活",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "支部活动",
+                                    "type": "PUBLIC_COMMUNITY_BRANCH_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部委员会活动",
+                                    "type": "PUBLIC_COMMUNITY_BRANCH_COMMITTEE_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "党小组活动",
+                                    "type": "PUBLIC_COMMUNITY_PARTY_GROUP_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部党课",
+                                    "type": "PUBLIC_COMMUNITY_PARTY_GROUP_COURSE"
+                                }
+                            ],
+                            "type": "PUBLIC_ORG_LIFE"
+                        },
+                        {
+                            "id": "1",
+                            "name": "居民自治",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "居委会工作例会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "“两委”联席会议",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "楼门栋长会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居务监督会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "物业管理联席会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居民代表会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "民主听证会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "协商议事会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社会组织会",
+                                    "type": "PUBLIC_COMMUNITY_ACTIVITY_GROUP"
+                                }
+                            ],
+                            "type": "PUBLIC_SELF_GOV"
+                        }
+                    ],
+                    "type": "PUBLIC_DEMOCACY"
+                }
+            ],
+            "msg": "SUCCESS"
+        }
+
+        entry:
+        {
+            "code": 1,
+            "data": [
+                {
+                    "id": "1",
+                    "name": "民政事务受理",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "申请和登记",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "城市居民低保",
+                                    "type": "ENTRY_CITY_DWELLER_ALLOWANCE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村居民低保",
+                                    "type": "ENTRY_COUNTRY_DWELLER_ALLOWANCE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市低收入家庭",
+                                    "type": "ENTRY_CITY_DWELLER_LOW_INCOME_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村低收入家庭",
+                                    "type": "ENTRY_COUNTRY_DWELLER_LOW_INCOME_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市价补联动",
+                                    "type": "ENTRY_CITY_PRICE_LINKAGE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村价补联动",
+                                    "type": "ENTRY_COUNTRY_PRICE_LINKAGE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村五保供养",
+                                    "type": "ENTRY_COUNTRY_FIVE_GUARANTESS_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "临时救助",
+                                    "type": "ENTRY_TEMP_RESCUE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "优抚待遇",
+                                    "type": "ENTRY_SPECIAL_CARE_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "婚姻登记预约",
+                                    "type": "ENTRY_MARRIAGE_BOOKING"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "公益创投",
+                                    "type": "ENTRY_VENTURE_CAPITAL_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "未成年人保护",
+                                    "type": "ENTRY_MINOR_PROTECT_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "孤残儿童",
+                                    "type": "ENTRY_DISABLE_CHILDREN_APPLY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "自然灾害",
+                                    "type": "ENTRY_NATURAL_DISASTER"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "寻亲登记",
+                                    "type": "ENTRY_TRACE_REGISTER"
+                                }
+                            ],
+                            "type": "ENTRY_APPLY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "复审与变更",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "城市居民低保",
+                                    "type": "ENTRY_CITY_DWELLER_ALLOWANCE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村居民低保",
+                                    "type": "ENTRY_COUNTRY_DWELLER_ALLOWANCE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市低收入家庭",
+                                    "type": "ENTRY_CITY_DWELLER_LOW_INCOME_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村低收入家庭",
+                                    "type": "ENTRY_COUNTRY_DWELLER_LOW_INCOME_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市价补联动",
+                                    "type": "ENTRY_CITY_PRICE_LINKAGE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村价补联动",
+                                    "type": "ENTRY_COUNTRY_PRICE_LINKAGE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村五保供养",
+                                    "type": "ENTRY_COUNTRY_FIVE_GUARANTESS_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "临时救助",
+                                    "type": "ENTRY_TEMP_RESCUE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "优抚待遇",
+                                    "type": "ENTRY_SPECIAL_CARE_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "公益创投",
+                                    "type": "ENTRY_VENTURE_CAPITAL_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "未成年人保护",
+                                    "type": "ENTRY_MINOR_PROTECT_MODIFY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "孤残儿童",
+                                    "type": "ENTRY_DISABLE_CHILDREN_MODIFY"
+                                }
+                            ],
+                            "type": "ENTRY_MODIFY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区审核",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "城市居民低保",
+                                    "type": "ENTRY_CITY_DWELLER_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村居民低保",
+                                    "type": "ENTRY_COUNTRY_DWELLER_ALLOWANCE_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市低收入家庭",
+                                    "type": "ENTRY_CITY_DWELLER_LOW_INCOME_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村低收入家庭",
+                                    "type": "ENTRY_COUNTRY_DWELLER_LOW_INCOME_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市价补联动",
+                                    "type": "ENTRY_CITY_PRICE_LINKAGE_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村价补联动",
+                                    "type": "ENTRY_COUNTRY_PRICE_LINKAGE_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村五保供养",
+                                    "type": "ENTRY_COUNTRY_FIVE_GUARANTESS_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "临时救助",
+                                    "type": "ENTRY_TEMP_RESCUE_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "优抚待遇",
+                                    "type": "ENTRY_SPECIAL_CARE_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "公益创投",
+                                    "type": "ENTRY_VENTURE_CAPITAL_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "未成年人保护",
+                                    "type": "ENTRY_MINOR_PROTECT_COMMUNITY_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "孤残儿童",
+                                    "type": "ENTRY_DISABLE_CHILDREN_COMMUNITY_AUDIT"
+                                }
+                            ],
+                            "type": "ENTRY_COMMUNITY_AUDIT"
+                        },
+                        {
+                            "id": "1",
+                            "name": "街道审核",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "城市居民低保",
+                                    "type": "ENTRY_CITY_DWELLER_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村居民低保",
+                                    "type": "ENTRY_COUNTRY_DWELLER_ALLOWANCE_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市低收入家庭",
+                                    "type": "ENTRY_CITY_DWELLER_LOW_INCOME_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村低收入家庭",
+                                    "type": "ENTRY_COUNTRY_DWELLER_LOW_INCOME_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "城市价补联动",
+                                    "type": "ENTRY_CITY_PRICE_LINKAGE_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村价补联动",
+                                    "type": "ENTRY_COUNTRY_PRICE_LINKAGE_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "农村五保供养",
+                                    "type": "ENTRY_COUNTRY_FIVE_GUARANTESS_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "临时救助",
+                                    "type": "ENTRY_TEMP_RESCUE_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "优抚待遇",
+                                    "type": "ENTRY_SPECIAL_CARE_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "公益创投",
+                                    "type": "ENTRY_VENTURE_CAPITAL_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "未成年人保护",
+                                    "type": "ENTRY_MINOR_PROTECT_STREET_AUDIT"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "孤残儿童",
+                                    "type": "ENTRY_DISABLE_CHILDREN_STREET_AUDIT"
+                                }
+                            ],
+                            "type": "ENTRY_STREET_AUDIT"
+                        }
+                    ],
+                    "type": "ENTRY_CIVIL"
+                },
+                {
+                    "id": "1",
+                    "name": "公安事务受理",
+                    "type": "ENTRY_POLICE"
+                },
+                {
+                    "id": "1",
+                    "name": "计生事务受理",
+                    "type": "ENTRY_BIRTH_CONTROL"
+                },
+                {
+                    "id": "1",
+                    "name": "房产事务受理",
+                    "type": "ENTRY_HOUSE_PROPERTY"
+                },
+                {
+                    "id": "1",
+                    "name": "人社事务受理",
+                    "type": "ENTRY_HUMAN"
+                },
+                {
+                    "id": "1",
+                    "name": "教育事务受理",
+                    "type": "ENTRY_EDU"
+                },
+                {
+                    "id": "1",
+                    "name": "医养服务",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "社区养老服务",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "社区生日会",
+                                    "type": "ENTRY_COMMUNITY_BIRTHDAY_PARTY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区五保公益",
+                                    "type": "ENTRY_COMMUNITY_FIVE_GUARANTEES"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "日间照料中心",
+                                    "type": "ENTRY_COMMUNITY_DAY_CARE_CENTER"
+                                }
+                            ],
+                            "type": "ENTRY_COMMUNITY_CARE"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区医疗服务",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "社区医院",
+                                    "type": "ENTRY_COMMUNITY_HOSPITAL"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区急救箱",
+                                    "type": "ENTRY_COMMUNITY_FIRST_AID_CARE"
+                                }
+                            ],
+                            "type": "ENTRY_COMMUNITY_MEDICAL"
+                        }
+                    ],
+                    "type": "ENTRY_MEDICAL_CARE"
+                },
+                {
+                    "id": "1",
+                    "name": "文娱生活",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "社区活动设施",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "安全教育室",
+                                    "type": "ENTRY_COMMUNITY_SAFE_EDU_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "科普馆",
+                                    "type": "ENTRY_COMMUNITY_MUSEUM_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "书画室",
+                                    "type": "ENTRY_COMMUNITY_PAINT_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "电子阅览室",
+                                    "type": "ENTRY_COMMUNITY_DIGITAL_READ_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "乒乓球室",
+                                    "type": "ENTRY_COMMUNITY_PINGPANG_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "台球室",
+                                    "type": "ENTRY_COMMUNITY_BILLIARD_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "道德讲堂",
+                                    "type": "ENTRY_COMMUNITY_MORALITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社区图书馆",
+                                    "type": "ENTRY_COMMUNITY_LIBRARY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "党员活动室",
+                                    "type": "ENTRY_COMMUNITY_PARTY_ACTIVITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "志愿者活动室",
+                                    "type": "ENTRY_COMMUNITY_VOLUNTEER_ACTIVITY_ROOM"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "文化中心",
+                                    "type": "ENTRY_COMMUNITY_CULTURAL_CENTER"
+                                }
+                            ],
+                            "type": "ENTRY_COMMUNITY_ACT_FACILITY"
+                        },
+                        {
+                            "id": "1",
+                            "name": "社区文化活动",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "老年歌舞团",
+                                    "type": "ENTRY_COMMUNITY_OLD_CHORUS"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年影视团",
+                                    "type": "ENTRY_COMMUNITY_OLD_FILM_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年戏曲团",
+                                    "type": "ENTRY_COMMUNITY_OLD_OPERA_TROUPE"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "老年书画团",
+                                    "type": "ENTRY_COMMUNITY_OLD_PAINT_GROUP"
+                                }
+                            ],
+                            "type": "ENTRY_COMMUNITY_ACT_CULTURE"
+                        }
+                    ],
+                    "type": "ENTRY_ENTERTAIN"
+                },
+                {
+                    "id": "1",
+                    "name": "民主建设",
+                    "submenus": [
+                        {
+                            "id": "1",
+                            "name": "组织生活",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "支部活动",
+                                    "type": "ENTRY_COMMUNITY_BRANCH_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部委员会活动",
+                                    "type": "ENTRY_COMMUNITY_BRANCH_COMMITTEE_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "党小组活动",
+                                    "type": "ENTRY_COMMUNITY_PARTY_GROUP_ACTIVITY"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "支部党课",
+                                    "type": "ENTRY_COMMUNITY_PARTY_GROUP_COURSE"
+                                }
+                            ],
+                            "type": "ENTRY_ORG_LIFE"
+                        },
+                        {
+                            "id": "1",
+                            "name": "居民自治",
+                            "submenus": [
+                                {
+                                    "id": "1",
+                                    "name": "居委会工作例会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "“两委”联席会议",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "楼门栋长会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居务监督会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "物业管理联席会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "居民代表会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "民主听证会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "协商议事会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "社会组织会",
+                                    "type": "ENTRY_COMMUNITY_ACTIVITY_GROUP"
+                                }
+                            ],
+                            "type": "ENTRY_SELF_GOV"
+                        }
+                    ],
+                    "type": "ENTRY_DEMOCACY"
+                }
+            ],
+            "msg": "SUCCESS"
+        }

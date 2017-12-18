@@ -1,0 +1,27 @@
+1.  获取当前登录信息
+    a.  请求url
+        /admin/loginUser
+    b.  method
+        GET
+    c.  参数
+        无
+    d.  返回值格式
+    {
+        "code": 1,
+        "data": {
+            "showName": "系统管理员",  // 显示名
+            "loginName": "admin",       //登录名
+            "id": 20                //用户id
+        },
+        "msg": "SUCCESS"
+    }
+    e.  demo数据
+    {
+        "code": 1,
+        "data": {
+            "showName": "系统管理员",
+            "loginName": "admin",
+            "id": 20
+        },
+        "msg": "SUCCESS"
+    }

@@ -1,0 +1,392 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "id": "1",
+      "level": 1,
+      "name": "停车场管理",
+      "type": "PUBLIC_PARKING"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "社区安防管理",
+      "type": "PUBLIC_SECURITY"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "楼宇电梯管理",
+      "type": "PUBLIC_LIF"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "民政政策信息管理",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "城市居民低保",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "2",
+          "level": 2,
+          "name": "农村居民低保",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "3",
+          "level": 2,
+          "name": "城市低收入家庭",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "4",
+          "level": 2,
+          "name": "农村低收入家庭",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "5",
+          "level": 2,
+          "name": "城市价补联动",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "6",
+          "level": 2,
+          "name": "农村价补联动",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "7",
+          "level": 2,
+          "name": "农村五保供养",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "8",
+          "level": 2,
+          "name": "临时救助",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "9",
+          "level": 2,
+          "name": "优抚待遇",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "10",
+          "level": 2,
+          "name": "婚姻登记预约",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "11",
+          "level": 2,
+          "name": "公益创投",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "12",
+          "level": 2,
+          "name": "未成年人保护",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "13",
+          "level": 2,
+          "name": "孤残儿童",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "14",
+          "level": 2,
+          "name": "自然灾害",
+          "type": "publicCivilSystem"
+        },
+        {
+          "id": "15",
+          "level": 2,
+          "name": "寻亲登记",
+          "type": "publicCivilSystem"
+        }
+      ],
+      "type": "PUBLIC_CIVIL_POLICY"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "医养服务信息管理",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区养老服务",
+          "submenus": [
+            {
+              "id": "1",
+              "level": 3,
+              "name": "社区生日会",
+              "type": "activity"
+            },
+            {
+              "id": "2",
+              "level": 3,
+              "name": "社区五保公益",
+              "type": "activity"
+            },
+            {
+              "id": "3",
+              "level": 3,
+              "name": "日间照料中心",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_COMMUNITY_CARE"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区医疗服务",
+          "submenus": [
+            {
+              "id": "4",
+              "level": 3,
+              "name": "社区医院",
+              "type": "activity"
+            },
+            {
+              "id": "5",
+              "level": 3,
+              "name": "社区急救箱",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_COMMUNITY_MEDICAL"
+        }
+      ],
+      "type": "PUBLIC_MEDICAL_CARE"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "文娱生活信息管理",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区活动设施",
+          "submenus": [
+            {
+              "id": "6",
+              "level": 3,
+              "name": "安全教育室",
+              "type": "activity"
+            },
+            {
+              "id": "7",
+              "level": 3,
+              "name": "科普馆",
+              "type": "activity"
+            },
+            {
+              "id": "8",
+              "level": 3,
+              "name": "书画室",
+              "type": "activity"
+            },
+            {
+              "id": "9",
+              "level": 3,
+              "name": "电子阅览室",
+              "type": "activity"
+            },
+            {
+              "id": "10",
+              "level": 3,
+              "name": "乒乓球室",
+              "type": "activity"
+            },
+            {
+              "id": "11",
+              "level": 3,
+              "name": "台球室",
+              "type": "activity"
+            },
+            {
+              "id": "12",
+              "level": 3,
+              "name": "道德讲堂",
+              "type": "activity"
+            },
+            {
+              "id": "13",
+              "level": 3,
+              "name": "社区图书馆",
+              "type": "activity"
+            },
+            {
+              "id": "14",
+              "level": 3,
+              "name": "党员活动室",
+              "type": "activity"
+            },
+            {
+              "id": "15",
+              "level": 3,
+              "name": "志愿者活动室",
+              "type": "activity"
+            },
+            {
+              "id": "16",
+              "level": 3,
+              "name": "文化中心",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_COMMUNITY_ACT_FACILITY"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "社区文化活动",
+          "submenus": [
+            {
+              "id": "17",
+              "level": 3,
+              "name": "老年歌舞团",
+              "type": "activity"
+            },
+            {
+              "id": "18",
+              "level": 3,
+              "name": "老年影视团",
+              "type": "activity"
+            },
+            {
+              "id": "18",
+              "level": 3,
+              "name": "老年戏曲团",
+              "type": "activity"
+            },
+            {
+              "id": "20",
+              "level": 3,
+              "name": "老年书画团",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_COMMUNITY_ACT_CULTURE"
+        }
+      ],
+      "type": "PUBLIC_ENTERTAIN"
+    },
+    {
+      "id": "1",
+      "level": 1,
+      "name": "民主建设信息管理",
+      "submenus": [
+        {
+          "id": "1",
+          "level": 2,
+          "name": "组织生活",
+          "submenus": [
+            {
+              "id": "21",
+              "level": 3,
+              "name": "支部活动",
+              "type": "activity"
+            },
+            {
+              "id": "22",
+              "level": 3,
+              "name": "支部委员会活动",
+              "type": "activity"
+            },
+            {
+              "id": "23",
+              "level": 3,
+              "name": "党小组活动",
+              "type": "activity"
+            },
+            {
+              "id": "24",
+              "level": 3,
+              "name": "支部党课",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_ORG_LIFE"
+        },
+        {
+          "id": "1",
+          "level": 2,
+          "name": "居民自治",
+          "submenus": [
+            {
+              "id": "25",
+              "level": 3,
+              "name": "居委会工作例会",
+              "type": "activity"
+            },
+            {
+              "id": "26",
+              "level": 3,
+              "name": "“两委”联席会议",
+              "type": "activity"
+            },
+            {
+              "id": "27",
+              "level": 3,
+              "name": "楼门栋长会",
+              "type": "activity"
+            },
+            {
+              "id": "28",
+              "level": 3,
+              "name": "居务监督会",
+              "type": "activity"
+            },
+            {
+              "id": "29",
+              "level": 3,
+              "name": "物业管理联席会",
+              "type": "activity"
+            },
+            {
+              "id": "30",
+              "level": 3,
+              "name": "居民代表会",
+              "type": "activity"
+            },
+            {
+              "id": "31",
+              "level": 3,
+              "name": "民主听证会",
+              "type": "activity"
+            },
+            {
+              "id": "32",
+              "level": 3,
+              "name": "协商议事会",
+              "type": "activity"
+            },
+            {
+              "id": "33",
+              "level": 3,
+              "name": "社会组织会",
+              "type": "activity"
+            }
+          ],
+          "type": "PUBLIC_SELF_GOV"
+        }
+      ],
+      "type": "PUBLIC_DEMOCACY"
+    }
+  ],
+  "msg": "SUCCESS"
+}
